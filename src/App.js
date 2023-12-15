@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import HooksUseState from "./component/HooksUseState";
+import HooksUseRef from "./component/HooksUseRef";
+import HooksUseEffect from "./component/HooksUseEffect";
+import InvestigateHowRenderingWorksWrapper from "./component/InvestigateHowRenderingWorksWrapper";
+import HooksUseCallback from "./component/HooksUseCallback";
+import HooksUseMemo from "./component/HooksUseMemo";
+import HooksUseContext from "./component/HooksUseContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HooksUseState/>
+      <HooksUseRef/>
+      <HooksUseEffect/>
+      <HooksUseCallback/>
+      <HooksUseMemo/>
+      <HooksUseContext/>
+      <InvestigateHowRenderingWorksWrapper propValue="test"/>
     </div>
   );
 }
